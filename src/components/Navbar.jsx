@@ -1,11 +1,12 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 
 const Navbar = () => {
     return (
         <div className='h-[80px] items-center sticky top-0 bg-white ring-1 ring-black ring-opacity-10 z-30'>
             <div className='flex justify-between px-[80px] items-center'>
                 <div className='w-[102px] h-[80px] flex items-center'>
-                    <img src="src/assets/logo/airbnb-nav-logo.png" />
+                    <NavLink to="/"><img src="../src/assets/logo/airbnb-nav-logo.png" /></NavLink>
                 </div>
                 <div className='flex text-sm font-semibold items-center w-max ring-1 ring-black ring-opacity-10 rounded-full h-12'>
                     <button className='pl-8'>ที่ไหนก็ได้</button>
